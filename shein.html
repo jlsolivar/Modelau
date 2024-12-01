@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelau PH</title>
+
+  <!-- Adding some stylish CSS -->
+  <style>
+    /* Global styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(#9896f1, #ffdcf5);
+    }
+
+    /* Header */
+    header {
+      background-color: #c9356c;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Left side: Search */
+    .search-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-left: 20px;
+    }
+
+    .search-container input[type="text"] {
+      padding: 8px;
+      font-size: 1em;
+      border-radius: 20px;
+      border: none;
+      margin-right: 10px;
+    }
+
+    .search-container button {
+      padding: 8px 15px;
+      background-color: #ec729c;
+      color: white;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .search-container button:hover {
+      background-color: #c9356c;
+    }
+
+    /* Logo or Brand name */
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+
+    /* Tagline styling */
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      font-family: 'Lora', serif;
+      font-weight: 300;
+      color: #f4f4f4;
+    }
+
+    /* Right side: Account, Currency, Cart */
+    .header-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 20px;
+      gap: 20px;
+    }
+
+    .header-right a {
+      font-size: 1em;
+      color: white;
+      text-decoration: none;
+      font-weight: 400;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+    }
+
+    .header-right a:hover {
+      color: #ffdcf5; /* Slightly change color on hover */
+    }
+
+    .header-right a:focus {
+      outline: none;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #ec729c;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Section */
+    .main-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+      flex-wrap: wrap;
+    }
+
+    .category-box {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 22%;
+      margin-bottom: 20px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .category-box img {
+      width: 100%;
+      height: auto;
+      border-bottom: 3px solid #ec729c;
+    }
+
+    .category-box h3 {
+      margin: 15px 0;
+      color: #2c3e50;
+    }
+
+    .category-box p {
+      color: #7f8c8d;
+      font-size: 1em;
+    }
+
+    .category-box .btn {
+      display: inline-block;
+      background-color: #ec729c;
+      color: white;
+      padding: 10px 20px;
+      margin: 20px 0;
+      text-decoration: none;
+      border-radius: 30px;
+    }
+
+    .category-box .btn:hover {
+      background-color: #c9356c;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #c9356c;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="search-container">
+      <input type="text" placeholder="Search products...">
+      <button>Search</button>
+    </div>
+
+    <div>
+      <h1>Modelau PH</h1>
+      <p>Where Pink Meets Perfect: Featuring Pink Collection</p>
+    </div>
+
+    <!-- Right Side: Account, Currency, Cart -->
+    <div class="header-right">
+      <!-- Create Account -->
+      <a href="#">Create Account</a>
+
+      <!-- Currency PHP -->
+      <a href="#">PHP</a>
+
+      <!-- Cart -->
+      <a href="#">Cart</a>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Women Fashion</a></li>
+      <li><a href="#">Men Fashion</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">Bags</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Section -->
+  <div class="main-section">
+
+    <!-- Women Category -->
+    <div class="category-box">
+      <img src="women.jpg" alt="Women Fashion">
+      <h3>Women Fashion</h3>
+      <p>Discover the latest trends in women's fashion, from dresses to accessories.</p>
+      <a href="#" class="btn">Shop Women</a>
+    </div>
+
+    <!-- Men Category -->
+    <div class="category-box">
+      <img src="men.jpg" alt="Men Fashion">
+      <h3>Men Fashion</h3>
+      <p>Stylish clothing and accessories to match every man's personality.</p>
+      <a href="#" class="btn">Shop Men</a>
+    </div>
+
+    <!-- Accessories Category -->
+    <div class="category-box">
+      <img src="necklace.jpg" alt="Accessories">
+      <h3>Accessories</h3>
+      <p>Complete your outfit with trendy accessories for every occasion.</p>
+      <a href="#" class="btn">Shop Accessories</a>
+    </div>
+
+    <!-- Bags Category -->
+    <div class="category-box">
+      <img src="bag.jpg" alt="Bags Items">
+      <h3>Bags</h3>
+      <p>Exclusive bags on the latest fashion items. Don't miss out!</p>
+      <a href="#" class="btn">Shop Bags</a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Modelau PH | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
+
+<script type="module">
+  import Chatbox from 'https://cdn.jsdelivr.net/npm/@chaindesk/embeds@latest/dist/chatbox/index.js';
+
+  const widget = await Chatbox.initBubble({
+    agentId: 'cm45jidui0fxw2056n6z4fs6t',
+    
+    // optional 
+    // If provided will create a contact for the user and link it to the conversation
+    contact: {
+      firstName: 'John',
+      lastName: 'Doe',
+      email: 'customer@email.com',
+      phoneNumber: '+33612345644',
+      userId: '42424242',
+    },
+    // optional
+    // Override initial messages
+    initialMessages: [
+      'Hello Georges how are you doing today?',
+      'How can I help you ?',
+    ],
+    // optional
+    // Provided context will be appended to the Agent system prompt
+    context: "The user you are talking to is John. Start by Greeting him by his name.",
+  });
+
+  // open the chat bubble
+  widget.open();
+
+  // close the chat bubble
+  widget.close()
+
+  // or 
+  widget.toggle()
+</script>
